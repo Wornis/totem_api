@@ -1,0 +1,10 @@
+{
+  "extends": "eslint-config-airbnb-base",
+  "rules": {
+    "no-console": "off",
+    "max-classes-per-file": "off",
+    "max-len": "off",
+    "no-plusplus": "off",
+    "no-await-in-loop": "off"
+  }
+}
