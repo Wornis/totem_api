@@ -1,7 +1,7 @@
-const personsResolvers = require('./personsResolvers');
+const artistsResolvers = require('./artist');
 
 const resolvers = [
-  personsResolvers,
+  artistsResolvers,
 ];
 
 module.exports = resolvers;

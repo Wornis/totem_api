@@ -11,4 +11,5 @@ module.exports = {
   NODE_ENV: env.NODE_ENV,
   HOST: env.HOST,
   PORT: env.PORT,
+  SPOTIFY_API_BASE_URL: env.SPOTIFY_API_BASE_URL,
 };

@@ -1,5 +1,5 @@
-const personType = require('./personType');
+const artistType = require('./artistType');
 
-const typeDefs = [personType];
+const typeDefs = [artistType];
 
 module.exports = typeDefs;
