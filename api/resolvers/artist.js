@@ -1,7 +1,8 @@
 const artistsResolvers = {
   Query: {
-    allArtists: async (_, { query }, { dataSources }) => {
-      const artists = await dataSources.artistAPI.getArtists({ query });
+    findArtists: async (_, { query }, { dataSources }) => {
+      // TODO HANDLE EXPIRED ACCES TOKEN (REFRESH IT WITH REFRESH TOKEN)
+      const artists = await dataSources.artistAPI.findArtists({ query });
       return artists;
     },
   },

@@ -2,11 +2,15 @@ const { gql } = require('apollo-server-express');
 
 const artistType = gql`
     type Artist {
-        id: Int
-        name: String
+        id: String!
+        name: String!
+    }
+    type ArtistSelect {
+        id: String!
+        name: String!
     }
     type Query {
-        allArtists(query: String!): [Artist]
+        findArtists(query: String!): [ArtistSelect]
     }
 `;
 
