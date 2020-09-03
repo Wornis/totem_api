@@ -9,7 +9,7 @@ const artistType = gql`
         id: String!
         name: String!
     }
-    type Query {
+    extend type Query {
         findArtists(query: String!): [ArtistSelect]
     }
 `;

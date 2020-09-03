@@ -14,11 +14,11 @@ class ArtistAPI extends RESTDataSource {
 
   // eslint-disable-next-line class-methods-use-this
   willSendRequest(request) {
-    request.headers.set('Authorization', 'Bearer BQCi1yHt3JCwzrhbxw2wslwpCU3rWwIOsKyJSOW9dXU9CsRfeYKNXI4W6ufWz-VNRtB9wDHO-CBSlLXRtCgWqIcKe2Z1VB0U10yim0btm58dzzrOUnVgAVUc4PSmb8OjjJR0GApOkL0sJ_Q');
+    request.headers.set('Authorization', 'Bearer BQAskQz8s1Oe8WQT2ZgwuapN3K4Rlr85RNyU1ztlIW611QFonFLXN1gtl4FeVu8AD4H_7KpXwrmOM4x-ECyj9tUeNdVdI4Cq52MulRjjusCCO4L2kzAyAUwWpERyxRdj2eK4reucTAlkDv4');
   }
 
   async findArtists({ query }) {
-    const { artists: { items } } = await this.get(`/search?q=${query}&type=artist`);
+    const { artists: { items } } = await this.get(`/search?q=${query}&type=artist&limit=50`);
     return items.map(artistSelectReducer);
   }
 }

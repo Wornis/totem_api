@@ -3,6 +3,7 @@ const { ApolloServer } = require('apollo-server-express');
 const typeDefs = require('../api/typeDefs');
 const resolvers = require('../api/resolvers');
 const ArtistAPI = require('../api/datasources/artist');
+const AlbumAPI = require('../api/datasources/album');
 
 const app = express();
 
@@ -11,6 +12,7 @@ const SERVER = new ApolloServer({
   resolvers,
   dataSources: () => ({
     artistAPI: new ArtistAPI(),
+    albumAPI: new AlbumAPI(),
   }),
   playground: {
     settings: {
