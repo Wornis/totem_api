@@ -1,5 +1,6 @@
 const artistType = require('./artist');
 const albumType = require('./album');
+const trackType = require('./track');
 
 const Query = `
   type Query {
@@ -11,6 +12,7 @@ const typeDefs = [
   Query,
   artistType,
   albumType,
+  trackType,
 ];
 
 module.exports = typeDefs;

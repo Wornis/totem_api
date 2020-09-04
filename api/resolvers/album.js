@@ -1,6 +1,6 @@
 const albumsResolvers = {
   Query: {
-    artistAlbums: async (_, { artistId }, { dataSources }) => {
+    albums: async (_, { artistId }, { dataSources }) => {
       const albums = await dataSources.albumAPI.getArtistAlbums({ artistId });
       return albums;
     },

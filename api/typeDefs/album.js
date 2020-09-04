@@ -15,7 +15,7 @@ const albumType = gql`
         albumImages: [AlbumImage]
     }
     extend type Query {
-        artistAlbums(artistId: String!): [Album]
+        albums(artistId: String!): [Album]
     }
 `;
 
