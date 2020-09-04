@@ -18,7 +18,7 @@ class AlbumAPI extends RESTDataSource {
 
   // eslint-disable-next-line class-methods-use-this
   willSendRequest(request) {
-    request.headers.set('Authorization', 'Bearer BQBmG1jA2ZznDzuu24oXGYca5jbsEJDPX3-tMuQIS8XXjuToXJVUpXupOh1AxkJnRyqaA-m1NUQSMZn-LeBApzK0T-6WQAD-U3hicpcHhf0Gjkk-m4M8xOQ-hDO-xlgh1vDNH9Au_xIklGg');
+    request.headers.set('Authorization', 'Bearer BQDYTSosk5UzbGiXWe-01rXk5ns3H-1qChirnK6JO3KW7BRDQHoF68lBewGmpcV5xh_tSwZSpt3mqtcTAjMoU1noU7fqiULRlRcS5iJew6IP_VQq5Wjuz3MTMbAtBhO7kArYhuNDAEwPRzg');
   }
 
   async getArtistAlbums({ artistId }) {
