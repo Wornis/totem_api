@@ -24,8 +24,12 @@ const getSpotifyAccessToken = async () => {
       refresh_token: SPOTIFY_REFRESH_TOKEN,
     },
   });
-  memcached.set({ key: 'accessToken', exp: data.expires_in });
-  return data.accessToken;
+  memcached.set({
+    key: 'accessToken',
+    exp: data.expires_in,
+    value: data.access_token,
+  });
+  return data.access_token;
 };
 
 module.exports = { getSpotifyAccessToken };

@@ -3,6 +3,7 @@
 Ce qui n'a pas été implémenté: 
 - Un module d'authentification
 - Les tests unitaires
+- Gestion des erreurs
 
 GraphQL architecture => Role-oriented
 

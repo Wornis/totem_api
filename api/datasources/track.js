@@ -19,6 +19,7 @@ class TrackAPI extends RESTDataSource {
   // eslint-disable-next-line class-methods-use-this
   async willSendRequest(request) {
     const accessToken = await getSpotifyAccessToken();
+    console.log(accessToken);
     request.headers.set('Authorization', `Bearer ${accessToken}`);
   }
 
